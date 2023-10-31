@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+
+        <input type="text" name="long_url">
+        <br>
+        <button type="submit">Shorten URL</button>
+    </form>
+
+
+    <a href="{{a_url}}">{{short_url}}</a>
+    <a href="urlRoster">Go to URL List</a>
+
+</body>
+</html>
